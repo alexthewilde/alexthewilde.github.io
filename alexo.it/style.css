@@ -1,0 +1,179 @@
+body { margin:205px 0 0 0; background: #000 url(img/berlin.png) no-repeat top center; font-family: Lucida Grande, Geneva, Verdana, Lucida Sans, Lucida Sans Unicode, sans-serif; color: #818181; line-height:1.9em; font-size:0.9em; }
+br {
+  height: 1px;
+}
+h1, h2, h3 { color:#fff; font-weight:500; }
+#welcoming { width:575px; font-family: 'Coustard', serif; font-size:1.3em; line-height:1.8em; text-align:justify; margin-bottom:2.5em; margin-top:-50px; }
+#welcoming em { background-color:#2A7EF5; font-style:normal; }
+h2 { font-size:1.1em; text-transform:uppercase; }
+h3 { font-size:0.7em; text-transform:uppercase; margin: -0.8em 0 -2em 0;}
+a:link, a:hover, a:visited, a:active { color:#FFF; text-decoration:underline; }
+
+#services { margin:0 auto; }
+#services div { float:left; width:390px; color:#fff; font-size:1.2em; }
+#services div.left { margin-left:80px; }
+#services div.left li { margin-bottom:1.55em; }
+#services div.right { margin-left:90px; }
+
+/* sections */
+div.section-title {
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+div.section-title h2 {
+  float: left;
+  margin: 0;
+}
+
+div.section-title #nextproject {
+  float: right;
+}
+
+/* end sections*/
+
+/* buttons */
+#nextproject {
+  margin-right: 10px;
+  font-size: 0.9em;
+  text-transform: none;
+}
+
+span.btn,
+a.btn {
+  background: black url("img/btn_gray_black_arrow.png") left top no-repeat;
+  display: inline-block;
+  border: medium none;
+  padding: 0 0 0 25px;
+}
+
+span.btn input,
+a.btn span {
+  background: black url("img/btn_gray_black_arrow.png") right top no-repeat;
+  border: medium none;
+  height: 23px;
+  line-height: 23px;
+  padding: 0 10px 2px 0;
+  margin: 0;
+  color: white;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+a.btn.tel, a.btn.tel span {
+  background-image: url("img/btn_call_gray_gray.png");
+  font-size: 0.95em;
+}
+
+div.location.current a.btn.tel,
+div.location.current a.btn.tel span {
+/*  background-image: url("img/btn_call_green_green.png");*/
+  font-size: 0.95em;
+}
+
+a.btn.map, a.btn.map span {
+  background-image: url("img/btn_gray_gray_arrow.png");
+  font-size: 0.95em;
+}
+
+div.location.current a.btn.map,
+div.location.current a.btn.map span {
+/*  background-image: url("img/btn_green_green_arrow.png");*/
+  font-size: 0.95em;
+}
+
+
+/* end buttons */
+
+.center { width:960px; position:relative; margin:0 auto; margin-bottom:1em; margin-top:1em; }
+.full { padding-top:1em; padding-bottom:1em; margin:1.8em 0 0 0; overflow: auto;}
+.clear { clear:both; }
+.clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix {display:block;}
+.highlight { background-color:#0e0e0e; }
+.visible { display:block !important; }
+.col, .lastcol { float:left; margin-right:20px; width:300px; position:relative; }
+.lastcol { margin-right:0; }
+.halfcol { width:450px; }
+ul.check { list-style-image: none; list-style-position: outside; padding: 0 0 22px; }
+ul.check li { /*list-style-type: none;*/ list-style-image: none; margin-left: 25px;
+/*	margin-bottom:1em;*/
+/*	background: url(img/tick.png) left 5px no-repeat;*/}
+
+/* ### news ### */
+div.news { margin-top:2em; }
+div.news h4 { padding-bottom:0; }
+a.image { float:left; margin-right:1em; }
+
+/* ### alexo projects ### */
+.project div.highlight { padding:20px; }
+/* set fix dimensions for jquery.cycle to work */
+#projects { width: 960px; height: 450px; margin:0; overflow: hidden;}
+#projects div.halfcol { width: 410px; height: 450px; }
+
+/* ### contact form ### */
+div.form-field {
+  position: relative;
+  padding: 0;
+  margin: 0 0 5px 0;
+  height: 42px;
+  float: left;
+  background: #0e0e0e;
+}
+
+div.form-field label {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  height: 0.9em;
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
+
+#contactform div.large-field {
+  height: auto;
+  width: 400px;
+  background: #0e0e0e;
+  padding: 0;
+}
+
+#contactform { background-color:#333; padding:20px; text-align:right; }
+#contactform div.form-field input, #contactform textarea {
+    float:left;
+    color:#fff;
+    border:0px;
+    padding:10px 0px 5px;
+    background-color:#0e0e0e;
+    font-size:1.2em;
+    margin: 0;
+}
+#contactform .form-field input { margin: 0;}
+#contactform label.check { float:none; }
+#contact_name { width:190px; }
+#contact_email { width:190px; }
+#text_solution { width:190px; }
+#contactform div.right-field {
+  margin-left: 20px;
+}
+#contact_message { width:400px; height:337px; font-size:1em !important; }
+#system_message { display:none; width:410px; position:absolute; top:209px; left:20px; z-index:10; text-align:center; color:#fff; background-color:#000; }
+#mail { position:absolute; background:transparent url(img/mail_batch.png) no-repeat top left; top:-12px; right:15px; z-index:10; width:168px; height:24px; }
+
+/* ### alexo locactions ### */
+.location { padding:20px; padding-right: 10px;background-color:#333; }
+.current { 
+	background-color:transparent;
+}
+.location h3 { color:#999; }
+.current h3 { color:#666; }
+.location h1 { margin-bottom:0.3em; }
+.location p { color:#fff; }
+.location div.adr { margin:1.5em 0; }
+.location div.adr p { line-height:.9em; margin: 0.2em 0; }
+.location div.col, .location div.lastcol { width:195px; }
+.location a.button { top:0; left:0; white-space:nowrap; }
+.current a.button { background-color: #009900; }
+.tel { font-size:1.1em; background: transparent url(img/call.png) no-repeat 5px 5px; }
+
+#footer { background: #000 url(img/badge_bg.jpg) no-repeat top center; color:#818181; font-size:0.7em; text-align:center; padding: 370px 0 30px; }

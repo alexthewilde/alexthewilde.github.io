@@ -1,0 +1,38 @@
+.deck-container p {
+  font-size:25px;
+}
+
+.deck-container h3 {
+  font-size:40px;
+}
+
+.deck-container .slide li {
+  font-size:37px;
+  margin:0;
+}
+
+.deck-container .process {
+  width:500px;
+  margin:100px auto;
+}
+
+.deck-container .process li {
+  border: 1px solid #333;
+  padding:25px 50px;
+}
+
+.deck-container .process li.done {
+  background-color:lightgreen;
+  color:#333;
+}
+
+.deck-container .process-annotations {
+  width:370px; margin:-350px auto;
+}
+
+.deck-container .process-annotations p {
+  background-color:transparent!important;
+  color:black!important;
+  opacity:1!important;
+  font-size:1em!important;
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Behavior Driven Development with Drupal</title>
+	
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="deckjs/core/deck.core.css">
+	<link rel="stylesheet" href="deckjs/extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="deckjs/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="deckjs/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="deckjs/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="deckjs/extensions/hash/deck.hash.css">
+	
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="deckjs/themes/style/neon.css">
+	<link rel="stylesheet" href="deckjs/themes/style/custom.css">	
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="deckjs/themes/transition/horizontal-slide.css">
+	
+	<script src="deckjs/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<!-- Begin slides -->
+<section class="slide" id="title-slide">
+	<h1>Behavior Driven<br />Development<br /><br />with Drupal</h1>
+</section>
+
+<section class="slide" id="comingup">
+	<h2>Coming up</h2>
+	<ol>
+		<li>
+      Why you should do <strong>test driven development</strong>
+		</li>
+		
+		<li>
+      How to get into the <strong>flow</strong>...
+		</li>
+
+		<li>
+      ...writing software outside-in with <strong>bdd</strong>
+		</li>
+				
+	</ol>
+</section>
+
+<section class="slide" id="about">
+	<h2>About me</h2>
+	<ul>
+		<li>
+      independent Drupal developer with a small shop in Berlin<br>
+      <a href="http://alexo.it">http://alexo.it</a>
+		</li>
+		
+		<li>
+      promoting TDD &amp; BDD in the Drupal community<br>
+      <a href="http://bdd.alexo.it">http://bdd.alexo.it</a>
+		</li>
+		
+		<li>
+      on-site BDD training workshops
+		</li>		
+		
+		<li>
+		  twitter @alexthewilde
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="tdd">
+	<h1>1. Test Driven<br />Development</h1>
+</section>
+
+<section class="slide" id="whats-tdd">
+	<h2>What's TDD?</h2>
+	
+	<blockquote class="slide" id="tdd-definition">Test driven development (TDD) is a software development process where you write tests before code</blockquote>
+	
+	<ul>
+		<li class="slide" id="tdd-writetests">
+		  you're writing tests <strong>at all</strong>
+		</li>
+		
+		<li class="slide" id="tdd-beforecode">
+		  write tests <strong>before</strong> any line of implementation code
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="tests">
+	<h2>Why tests?</h2>
+	
+	<ul>
+		<li>
+		  tests verify systematically if your site still works as expected (automated QA)
+		</li>
+		
+		<li class="slide" id="tests-document">
+      tests document your software
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="testdriven">
+	<h2>Why develop test driven?</h2>
+	
+	<ul>
+		<li class="slide" id="testdriven-coverage">
+		  ensure full test coverage of codebase
+		</li>
+		
+		<li class="slide" id="tests-document">
+      find bad ideas early in the process
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="flow">
+	<h1>2. Flow</h1>
+</section>
+
+<section class="slide" id="flow-definition">
+	<h2>Flow</h2>
+	
+	<blockquote>In the "flow", we're completely immersed in our programming activity when we solve difficult challenges with complex skills</blockquote>
+	
+</section>
+
+<section class="slide" id="flow-you">
+	<h2>Flow</h2>
+	
+	<h1>Flow is the reason<br>why we love programming</h1>
+	
+</section>
+
+<section class="slide" id="flow-more">
+	<h2>Flow</h2>
+	
+	<h1>How can we have more flow experiences in programming?</h1>
+	
+</section>
+
+<section class="slide" id="flow-mihaly">
+	<h2>Mihaly Csikszentmihalyi</h2>
+	
+	<img src="deckjs/images/mihaly.jpeg" width="300" style="margin-top:80px;" />
+	
+</section>
+
+<section class="slide" id="flow-conditions">
+	<h2>Flow conditions</h2>
+	
+	<ol style="line-height:4em;">
+		<li class="slide" id="flow-goals">
+      clear and verifiable goals
+      <p></p>
+		</li>
+		
+		<li class="slide" id="flow-feedback">
+      immediate and relevant feedback
+		  <p></p>
+		</li>
+
+		<li class="slide" id="flow-skills">
+      difficult challenge and sufficient skills
+		  <p></p>
+		</li>
+	</ol>
+	
+  <div style="margin-top:-310px; font-size:25px;">
+  	<p class="slide" id="flow-goals2" style="margin-left:40px;">=> we know when the goal is achieved</p>
+    <p class="slide" id="flow-feedback2" style="margin:90px 0 0 40px;">=> we know if we're doing it right</p>
+    <p class="slide" id="flow-skills2" style="margin:90px 0 0 40px;">=> we know we can solve the problem</p>
+  </div>
+	
+</section>
+
+<section class="slide" id="flow-activities">
+	<h2>Flow activities</h2>
+	
+	<ul>
+		<li>
+		  programming, writing, drawing, cooking
+		</li>
+		
+		<li>
+		  playing an instrument, listening to music
+		</li>
+
+		<li>
+		  reading, sport, speaking a language
+		</li>
+
+	</ul>
+</section>
+
+<section class="slide" id="flow-more2">
+	<h2>Flow</h2>
+	
+	<h1>How can we have more flow experiences in programming?</h1>
+	
+</section>
+
+<section class="slide" id="flow-tdd">
+	<h2>We need</h2>
+	
+	<ol>
+		<li>
+      clear and verifiable goals
+		  <p class="slide" id="flow-tdd-goals">=> write tests that describe exactly how our software should work</p>
+		</li>
+		
+		<li>
+      immediate and relevant feedback
+		  <p class="slide" id="flow-tdd-feedback">=> run tests to verify if our software works as expected</p>
+		</li>
+		
+		<li>
+      (difficult challenge and sufficient skills)
+		</li>		
+
+	</ol>
+	
+</section>
+
+<section class="slide" id="tdd-to-bdd">
+	<h2>TDD &amp; Flow</h2>
+	
+	<ul>
+		<li class="slide" id="tdd-to-bdd1">
+      good: think about clear goals first
+		</li>
+		
+		<li class="slide" id="tdd-to-bdd2">
+      bad: thinking about goals in code
+		</li>
+	</ul>
+		
+</section>
+
+<section class="slide" id="tdd-to-bdd3">
+	<h2>TDD &amp; Flow</h2>
+	
+  <div>
+  	<p>separate</p>
+	
+    <h3>
+      writing test code
+    </h3>
+  </div>
+
+  <div class="slide" id="tdd-to-bdd4">
+  	<p>from</p>
+
+    <h3>
+      specifying how the software should work   
+    </h3>
+  </div>
+		
+</section>
+
+<section class="slide" id="bdd">
+	<h1>3. Behavior Driven<br>Development</h1>
+</section>
+
+<section class="slide" id="bdd-process">
+	<h2>BDD process</h2>
+	
+	<ol class="process">
+		<li>
+      spec feature
+		</li>
+		
+		<li>
+      write tests
+		</li>
+
+		<li>
+      iterate implementation
+		</li>
+	</ol>
+		
+</section>
+
+<section class="slide" id="bdd-spec">
+	<h2>Spec feature</h2>
+	
+	<ul>
+	 <li class="slide" id="bdd-spec-story">User story</li>
+	</ul>
+</section>
+
+<section class="slide" id="bdd-story">
+	<h2>User story</h2>
+	
+  <pre><code>As a site member
+I want to be welcomed with my name at login
+in order to personalize my user experience</code></pre>
+	
+  <pre class="slide" id="bdd-story2"><code>As a [system actor]
+I want to/I need to [objective]
+in order to/so that [rationale]</code></pre>
+</section>
+
+<section class="slide" id="bdd-good-story">
+	<h2>A good user story is</h2>
+	
+	<ul>
+	 <li>small</li>	  
+	 <li class="slide" id="bdd-good-story2">independent</li>	 
+	 <li class="slide" id="bdd-good-story3">valuable</li>
+	 <li class="slide" id="bdd-good-story4">testable</li>
+	</ul>
+</section>
+
+<section class="slide" id="bdd-spec2">
+	<h2>Spec feature</h2>
+	
+	<ul>
+	 <li>User story</li>
+	 <li class="slide" id="bdd-spec-scenarios2">Scenarios</li>
+	</ul>
+</section>
+
+<section class="slide" id="bdd-scenarios">
+	<h2>Scenarios</h2>
+	
+  <pre><code>Given [a precondition]
+When [some action by the system actor]
+Then [some testable outcome is achieved]</code></pre>
+	
+  <pre class="slide" id="bdd-scenarios2"><code>Scenario: user login with valid credentials
+  Given a user "alex" with password "secret" exists
+  When I login as "alex" with "secret"
+  Then I should see the message "Welcome back alex!"</code></pre>
+  
+  <div class="slide" id="bdd-gherkin">
+    <p>Gherkin</p>
+    <blockquote>
+      Gherkin is a business readable language that lets you describe software’s behaviour without detailing how that behaviour is implemented.
+  	</blockquote>
+  </div>
+</section>
+
+<section class="slide" id="bdd-scenarios-tips">
+	<h2>Scripts vs. specs</h2>
+	
+	<div class="slide" id="bdd-scenarios-script">
+  	<p>bad</p>
+    <pre><code>When I go to "user/login"
+And I enter "alex" into the field "username"
+And I enter "secret" into the field "password"
+And I click on the button "login"</code></pre>
+  </div>
+
+  <div class="slide" id="bdd-scenarios-spec">
+    <p>good</p>
+    <pre><code>When I login as "alex" with "secret"</code></pre>
+  </div>
+</section>
+
+<section class="slide" id="bdd-spec2">
+	<h2>Spec feature</h2>
+	
+	<p>User story</p>
+  <pre><code>As a site member
+I want to be welcomed with my name at login
+in order to personalize my user experience</code></pre>
+
+  <p>Scenarios</p>
+  <pre><code>Scenario: user login with valid credentials
+  Given a user "alex" with password "secret" exists
+  When I login as "alex" with "secret"
+  Then I should see the message "Welcome back alex!"
+  
+Scenario: user login with invalid credentials
+  Given a user "alex" with password "secret" exists
+  When I login as "alex" with "123"
+  Then I should not see the message "Welcome back alex!"</code></pre>  
+</section>
+
+<section class="slide" id="bdd-process2">
+	<h2>BDD process</h2>
+	
+	<ol class="process">
+		<li class="done">
+      spec feature
+		</li>
+		
+		<li>
+      write tests
+		</li>
+
+		<li>
+      iterate implementation
+		</li>
+	</ol>
+		
+</section>
+
+<section class="slide" id="bdd-tests">
+	<h2>Tests</h2>
+	
+  <p>Step</p>
+  <pre><code>Given a user "[.....REGEXP......]" exists</code></pre>
+	
+  <p>Step definition</p>
+  <pre><code>$steps->Given('/^a user "([^"]*)" exists "([^"]*)"$/',
+function($world, $name, $pass) {
+  $world->drupalCreateNamedUser($name, $pass);  
+});</code></pre>
+
+  <ul class="slide" id="bdd-stepdef-reuse">
+    <li>use SimpleTest API</li>
+    <li>reuse step definitions</li>
+  </ul>
+
+
+</section>
+
+<section class="slide" id="bdd-process3">
+	<h2>BDD process</h2>
+	
+	<ol class="process">
+		<li class="done">
+      spec feature
+		</li>
+		
+		<li class="done">
+      write tests
+		</li>
+
+		<li>
+      iterate implementation
+		</li>
+	</ol>
+		
+</section>
+
+<section class="slide" id="bdd-implement">
+	<h1>iterate</h1>
+</section>
+
+<section class="slide" id="bdd-process4">
+	<h2>BDD process</h2>
+	
+	<ol class="process">
+		<li class="done">
+      spec feature
+      <p></p>
+		</li>
+		
+		<li class="done">
+      write tests
+		</li>
+
+		<li class="done">
+      iterate implementation
+		</li>
+	</ol>
+	
+  <div class="process-annotations">
+    <p class="slide" id="bdd-process-spec">
+      => who needs what and why?<br>
+      => how should the feature behave?
+    </p>
+  
+    <p class="slide" id="bdd-process-tests" style="margin-top:73px;">
+      => verify if the feature works as specified
+    </p>  
+
+    <p class="slide" id="bdd-process-iterate" style="margin-top:73px;">
+      => make the feature work as specified
+    </p>
+  </div>
+		
+</section>
+
+<section class="slide" id="bdd-drupal">
+	<h1>BDD with Drupal</h1>
+</section>
+
+<section class="slide" id="bdd-tools">
+	<h2>Modules</h2>
+	
+	<ul>
+	 <li class="slide" id="bdd-tools-simpletest">SimpleTest</li>	  
+	 <li class="slide" id="bdd-tools-selenium">Selenium</li>
+	 <li class="slide" id="bdd-tools-behat">Behat</li>
+	</ul>
+		
+</section>
+
+<section class="slide" id="bdd-drupal2">
+	<h2>TDD/BDD with Drupal</h2>
+	
+	<p>2nd condition of flow</p>
+	<blockquote class="slide" id="bdd-drupal3">
+	 immediate and relevant feedback
+	</blockquote>
+	
+  <h3 class="slide" id="bdd-drupal4">
+  => short test cycles
+  </h3>	
+	
+</section>
+
+<section class="slide" id="bdd-drupal5">
+	<h2>TDD/BDD with Drupal</h2>
+	
+  <p>
+    median time in Drupal until a test is set up:
+  </p>	
+  
+  <h3 class="slide" id="bdd-drupal6">20 seconds</h3>
+  
+  <p class="slide" id="bdd-drupal7">
+    => inacceptably long
+  </p>
+
+</section>
+
+<section class="slide" id="bdd-drupal-simpletestfixture">
+	<h2>SimpleTest Fixture module</h2>
+	<ul>
+	 <li>makes SimpleTest use a db prepopulated with fixtures</li>	  
+	 <li class="slide" id="bdd-drupal-fixture-problem">problem: fixtures db is not getting cleaned up from prior test operations</li>
+	 <li class="slide" id="bdd-drupal-fixture-solutions">possible solutions:
+	   <ul>
+	     <li>roll back changes programmatically between tests</li>
+	     <li>prepare multiple dbs</li>
+	   </ul>
+	 </li>
+	</ul>	
+</section>
+
+<section class="slide" id="resources">
+	<h2>BDD with Drupal resources</h2>
+	
+	<ul>
+	  <li>Behat module<br>
+	    <a href="http://drupal.org/project/behat">http://drupal.org/project/behat</a></li>
+	  <li>SimpleTest Fixture module<br>
+	    <a href="http://drupal.org/project/simpletest_fixture">http://drupal.org/project/simpletest_fixture</a></li>
+	  <li>Slides on <a href="http://bdd.alexo.it">http://bdd.alexo.it</a></li>
+	  <li>Book "Flow - The Psychology of Optimal Experience"</li>
+	</ul>
+</section>
+
+<section class="slide" id="thank-you">
+	<h1>Thank You</h1>
+</section>
+
+<!-- deck.navigation snippet -->
+<a href="dcessen.html#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="dcessen.html#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="http://bdd.alexo.it/slides/" method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="http://bdd.alexo.it/slides/" title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="deckjs/jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="deckjs/core/deck.core.js"></script>
+<script src="deckjs/extensions/hash/deck.hash.js"></script>
+<script src="deckjs/extensions/menu/deck.menu.js"></script>
+<script src="deckjs/extensions/goto/deck.goto.js"></script>
+<script src="deckjs/extensions/status/deck.status.js"></script>
+<script src="deckjs/extensions/navigation/deck.navigation.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>

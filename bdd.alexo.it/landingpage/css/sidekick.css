@@ -1,0 +1,293 @@
+﻿@charset "utf-8";
+@font-face {
+ font-family: 'LeagueGothicRegular';
+ src: url('../fonts/league_gothic-webfont.eot');
+ src: local('☺'), url('../fonts/league_gothic-webfont.woff') format('woff'), url('../fonts/league_gothic-webfont.ttf') format('truetype'), url('../fonts/league_gothic-webfont.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ button::-moz-focus-inner {
+padding:0;
+border:0;
+} /* FF Fix */
+button {
+	-webkit-border-fit:lines;
+} /* <- Safari & Google Chrome Fix */
+button, .button {
+	overflow:visible;
+	width:auto;
+	border:0;
+	padding:0;
+	margin:0;
+	background-color: transparent;
+	cursor:pointer;
+	display:inline-block;
+}
+button span, .button span {
+	display: inline-block;
+	white-space: nowrap;
+	cursor: pointer;
+	color:#fff;
+}
+body {
+	background: url(../images/bg-body.jpg);
+}
+body, input, button {
+	font-family: MuseoSlab-500;
+}
+h1, h2, h3 {
+	font-weight: normal;
+	font-style:normal;
+	margin:0px;
+}
+h1 {
+	font-family: 'LeagueGothicRegular';	
+	text-transform: uppercase;
+	display: block;
+	font-size:105px;
+	line-height: 1.2;
+	text-shadow: 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom:45px;
+}
+h2 span {
+	font-size:34px;
+	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+	color:#53b0eb;
+}
+h3 {
+	font-family:"Helvetica Neue";
+	font-weight:300;
+	font-size:25px;
+	margin-left:15px;
+	margin-bottom:5px;
+}
+#header pre {
+	margin:0px;
+}
+body, #wrapper { width: 100%;}
+#wrapper {
+	width:100%;
+	overflow:hidden;
+}
+#header, #header a {
+	color:#fff;
+}
+#top {
+	padding: 35px 0;
+	line-height:1;
+	font-size:16px;
+	text-transform: uppercase;
+	background: url(../images/bg-top.png) repeat-x center bottom;
+	height:12px;
+}
+#container {
+	background:#fff;
+}
+#featured-container {
+	padding: 40px 0;
+}
+
+p.divider {
+	margin-bottom:40px;
+}
+code {
+	background: url(../images/bg-mask.png);
+	padding:15px;
+  font: 12px Monaco, "Lucida Console", "Courier New", "Courier", monospace;
+  display: block;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+#features {
+	padding-top:13px;
+	background: url(../images/vsep.png) no-repeat center 68px;
+}
+#features li { width: 190px; float:left;}
+#features li.center { padding: 0 12px; margin: 0 12px; }
+#features h2 {
+	font-size:30px;
+	margin-bottom:10px;
+	line-height:1;
+}
+#features p {
+	font-size: 13px;
+	margin-bottom:0;
+	line-height:1.5;
+}
+#features a.link-more {
+	color:#fff;
+	padding: 1px 5px 3px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+.feature {
+	padding: 0 0 15px;
+}
+.feature h2 {
+	font-size:24px;
+	font-weight: normal;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.feature p {
+	font-size: 13px;
+	line-height: 1.5;
+}
+#signup-form {
+	padding: 15px;
+}
+#signup-form h2 {
+	text-align: center;
+	font-size:24px;
+	font-weight: normal;
+	text-transform:uppercase;
+	width:100%;
+	padding: 0 15px;
+	margin: 0 -15px 25px;
+	background: url(../images/line.png) repeat-x left bottom;
+	padding-bottom:10px;
+}
+#signup-form label {
+	font-size:16px;
+	display: block;
+	margin-bottom:10px;
+	line-height:1;
+}
+#signup-form input[type=text], #signup-form textarea {
+	background-color:#fff;
+	border: none;
+	border-top: solid 3px #bababa;
+	width:250px;
+	padding: 9px 10px;font-size:14px;
+}
+#signup-form p.last {
+	margin-bottom: 0;
+}
+#signup-form button, #signup-form button > span {
+	display: block;
+	width:100%;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+#signup-form button > span {
+	background-color:rgba(0, 0, 0, 0.5);
+	font-size:16px;
+	text-align:center;
+	line-height: 68px;
+}
+#testimonials-container {
+	padding: 30px 0;
+}
+#testimonials {
+	padding: 0 50px;
+}
+#testimonials ul {
+	margin:0;
+}
+.customer-avatar {
+	background-color:#fff;
+	float:left;
+	padding: 10px;
+}
+.customer-says {
+	margin-left: 175px;
+	padding: 20px 25px;
+	border: solid 1px #d5d5d5;
+	background-color:#fff;
+	font-size:18px;
+}
+.customer-says > div {
+	background: url(../images/bg-testibox.png) no-repeat left 50px;
+	padding-left:50px;
+	margin-left: -49px;
+}
+.customer-position {
+	font-size:14px;
+	padding-top: 15px;
+	color:#333;
+	text-shadow: 0 1px 0 #fff;
+}
+.grey {
+	color:#666;
+}
+.customer-avatar img {
+	float:left;
+}
+#container {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	padding: 50px 0 20px;
+}
+#footer {
+	padding: 30px 0;
+}
+#legality {
+	line-height:36px;
+	font-size:14px;
+	color:#333;
+}
+#social-networks li { display: inline; }
+
+.hidden {
+	display:none;
+}
+
+/* `Colors
+----------------------------------------------------------------------------------------------------*/
+#header {
+	background: #a53e00 url(../images/bg_pattern.png) center top;
+}
+#testimonials a, #container a, #container h2, #container h3, .highlight {
+	color:#75150c;
+}
+
+.drupalblue #header {
+	background: #0d7dc1 url(../images/bg_pattern.png) center top;
+}
+.drupalblue #testimonials a, .drupalblue #container a, .drupalblue #container h2, .drupalblue #container h3, .drupalblue .highlight {
+	color:#53b0eb;
+}
+
+.winered #header {
+	background: #5f0817 url(../images/bg_pattern.png) center top;
+}
+.winered #testimonials a, .winered #container a, .winered #container h2, .winered #container h3, .winered .highlight {
+	color:#750c38;
+}
+
+.grape #header {
+	background: #5e075b url(../images/bg_pattern.png) center top;
+}
+.grape #testimonials a, .grape #container a, .grape #container h2, .grape #container h3, .grape .highlight {
+	color:#600c75;
+}
+
+.blusihgreen #header {
+	background: #06565b url(../images/bg_pattern.png) center top;
+}
+.blusihgreen #testimonials a, .blusihgreen #container a, .blusihgreen #container h2, .blusihgreen #container h3, .blusihgreen .highlight {
+	color:#0c7564;
+}
+
+.darkgreen #header {
+	background: #485e07 url(../images/bg_pattern.png) center top;
+}
+.darkgreen #testimonials a, .darkgreen #container a, .darkgreen #container h2, .darkgreen #container h3, .darkgreen .highlight {
+	color:#73750c;
+}
+
+.darkpurple #header {
+	background: #3e2c38 url(../images/bg_pattern.png) center top;
+}
+.darkpurple #testimonials a, .darkpurple #container a, .darkpurple #container h2, .darkpurple #container h3, .darkpurple .highlight {
+	color:#4b3649;
+}
