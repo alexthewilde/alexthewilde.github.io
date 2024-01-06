@@ -1,45 +1,401 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Alex Wilde</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <div class="vh-100 dt w-100">
-  <div class="dtc v-mid">
-    <div class="mw6 center pa3 black-70">
-      <div class="pb2">
-        <h1 class="f1 fw5">Hi, I’m Alex Wilde.</h1>
-        <p class="lh-copy f4">
-          <span class="small-caps fw5 tracked">I’m a full-stack developer</span> currently working on my own project <a class="no-underline fw5 link" href="https://www.flowra.com" target="_blank">flowra.com</a>.
-        </p>
-        <p class="lh-copy f5">
-          I enjoy designing and building web applications using <a class="no-underline fw5 link" href="http://angular.io" target="_blank">Angular</a>.
-          In the <a class="no-underline fw5 link" href="./alexo.it">past</a> I built websites with Drupal like <a class="no-underline fw5 link" href="http://concert.arte.tv" target="_blank">ARTE Concert</a>.<br />
-          I’m also an okay singer.
-        </p>
-        <p class="lh-copy f5">Let’s meet up when you’re in Barcelona the next time!</p>
-      </div>
+  <p style="text-align: right; word-spacing: 1rem;">
+    <script language="JavaScript">
+      var one = "ale", two = "xosoft", three = "gmail", four = ".c", five = "om";
+      document.write("<a href='" + "mail" + "to:" + one + two + "@" + three + four + five + "' class='mr3 black-70 social f6' target='_blank'><i class='fa f6 fa-envelope'></i></a>");
+    </script>
+    <a href="http://www.github.com/alexthewilde"><i class="fa f6 fa-github"></i></a>
+    <a href="http://www.linkedin.com/in/alexwilde/"><i class="fa f6 fa-linkedin"></i></a>
+    </p>
+    <h1>Hi, I’m Alex Wilde.</h1>
+    <p>I'm a <b>full-stack engineer</b> building software products. For a living at <a href="https://www.signavio.com/">SAP
+        Signavio</a> and for fun at <a href="https://www.songcoach.ai">Songcoach.ai</a>.</p>
+    
+    <p>
+      <a href="#projects">Projects</a> ·
+      <a href="#how-i-work">How I work</a> ·
+      <a href="#tools">Tools</a> ·
+      <a href="#tools">Productivity</a> ·
+      <a href="#skills">Skills</a> ·
+      <a href="#routine">Routine</a> ·
+      <a href="#books">Books</a> ·
+      <a href="#personal">Personal</a>
+    </p>
+    
+    <h2>
+      This is my story (so far)
+    </h2>
+    
+    <h3>1984</h3>
+    <p>
+      Born in Hutthurm which is close to Passau, Bavaria.
+    </p>
+    
+    <h3>1990</h3>
+    <p>
+      Got my first computer for christmas: a Commodore Amiga 500.
+    </p>
+    
+    <h3>2000</h3>
+    <p>
+      I was a competitive rower in my youth. Highest achievement: Runner-up at german indoor rowing championship 💪
+    </p>
+    <p>
+      Incorporated my first business "German Intertrade" from my childhood room: buy PCs on ebay and re-sell them locally
+      with a margin.
+    </p>
+    <h3>2002</h3>
+    <p>Taught myself how to program dynamic websites with PHP and MySQL in Macromedia Dreamweaver.</p>
+    <p>
+      Built my first website: allow peers from school to upload pictures and comment on them. Think of it as a
+      pre-facebook built as a hack on top of phpBB.
+    </p>
+    <p>Excited about this new skillset, I wanted to professionalize and learn typo3 (a popular CMS in Germany back then)
+      to earn money as "webmaster". But I felt that typo3 was ultra complicated to implement and use.</p>
+    <p>
+      So I started to build the "alexo Impresario", a CMS that was more user-friendly and allowed me to build and operate
+      websites for customers.
+    </p>
+    
+    <h3>
+      2003 - 2005
+    </h3>
+    <p>
+      Left my parents' home and moved to Berlin to study economics (and go clubbing). Stopped going to university after 3
+      weeks though as I quickly realized that I was done with teachers telling me what to do.
+    </p>
+    <p>
+      Dedicated myself to further develop the Impresario and turn it into a viable business. But I was not a programmer
+      whizkid and had to learn coding the hard way. I obviously had no idea what I was doing and things turned pretty bad.
+    </p>
+    
+    <p>
+      By the end of 2005 I didn't have a single customer and was 20k EUR in debt.
+      My parents started to question my life choices. But I refused to give up and go back to university.
+    </p>
+    
+    <p>
+      Fun fact: during that time, I also applied at re-known theatre acting schools because I wanted to learn the craft.
+      At one audition in Berlin, I got rejected and the jurors there made fun of me because I was struggling to speak
+      standard german without my bavarian accent. This finally made me decide to become an engineer instead so I would be
+      judged on merits, not appearance.
+    </p>
+    
+    <h3>
+      2006
+    </h3>
+    <p>
+      2006 became a turn-around year in my career. I <i>finally</i> sold the Impresario to a few customers and started to
+      earn money! Within a few months, I was able to pay back my debts and create a steady revenue stream.
+    </p>
+    
+    <p>I remember the summer of 2006, when the world cup took place in Germany and people were just <i>cheerful all over
+        the place</i>, as one of the best times in my home country, particularly in Berlin.</p>
+    
+    <h3>
+      2007
+    </h3>
+    
+    <p>The more mature I became as a developer, the more I realized how pointless it was by now to build a proprietary
+      CMS. Free and better open source alternatives had been on the rise and one of them in particular had caught my
+      attention: Drupal.</p>
+    
+    <p>Killing your own product that you've poured so much time, energy and hope into hurts (until today). But by betting
+      on Drupal, a new chapter in my career had opened.</p>
+    
+    
+    <h3>
+      2008
+    </h3>
+    <p>
+      Fulfilled a dream of mine and went to live in San Francisco for a few months. I had one of the best times of my
+      life. But the city was just too damn expensive.</p>
+    <p>
+      I actually went broke during this time. I lost my only client due to the global financial crisis and had to live on
+      pasta for weeks.
+    </p>
+    <p>
+      Through my network at <a href="https://en.wikipedia.org/wiki/File:Citizen_Space,_San_Francisco,_CA.jpg">Citizen
+        Space</a>, I got an interview for a consultant gig at Zappos. Got flown into Las Vegas and had lunch with Tony
+      Shea and his CTO, which felt completely surreal. I screwed up the technical interview afterwards, as I wasn’t able
+      to simply say “I don’t know” to some questions, instead of bs’ing the interviewer.
+    </p>
+    
+    <h3>2009</h3>
+    <p>
+      With my financial situation worsening even more, I <i>almost</i> accepted a gig to work on a porn site once. Glad I
+      didn't do it.
+    </p>
+    
+    <p>
+      Shortly after that, <a href="https://www.jaspersoft.com/">Jaspersoft</a> reached out to me and asked me for help
+      with their website relaunch. This gig not only saved my ass financially, but it also made me grow as freelance
+      software engineer handling a US client for the first time. I've never had any trouble finding new gigs again
+      afterwards.
+    </p>
+    <p>
+      Back in Berlin, I moved into <a href="https://members.co-up.de/">co.up</a> coworking space and became friends with
+      the founders of <a href="https://www.cobot.me/en/about#team">Cobot</a>. These guys were years ahead of me with their
+      development practices and introduced me to this new site called GitHub and how to create PRs; how to do test driven
+      development; and encouraged me to do more public speaking.
+    </p>
+    <p>
+      At the same time I got more and more involved with the Drupal community where I enjoyed the camaraderie of other
+      developers. Memories of my lonely years of working as an unexperienced solo-founder started to fade away.
+    </p>
+    
+    <h3>2010 - 2011</h3>
+    <p>
+      Discovered a book about <a href="https://www.goodreads.com/en/book/show/66354">Flow Psychology</a>, which changed my
+      perspective on life and product forever. I found new purpose as entrepreneur in building software that helps people
+      “live a life in flow” and become happy.
+    </p>
+    <p>
+      The idea was as fluffy as it sounds and therefore the project wasn't going anywhere. But I enjoyed the freedom of
+      working on my own side projects while the freelance business kept getting stronger every year.</p>
+    
+    <h3>2012</h3>
+    <p>
+      I saw Michael Phelps swim like a demigod at the London Olympics and decided that I finally wanted to learn freestyle
+      swimming myself.
+    </p>
+    
+    <p>
+      When I started out, I was completely exhausted after swimming only two lanes. My coach Holger then taught me how to
+      relax my arms between each stroke and keep a correct posture, which made all the difference.
+    </p>
+    
+    <p>
+      By the end of 2022, I did my first short-distance triathlon in the open sea in Barcelona. My biggest athletic
+      achievement since the rowing championship in 2000.
+    </p>
+    
+    <h3>2013 - 2023</h3>
+    <p>(more content following soon!)</p>
+    
+    <h2 id="projects">Archive of all my projects</h2>
+    <p><i>2003 - 2007</i> bootstrapped alexo Impresario CMS.</p>
+    <p><i>2006</i> ShareYourEmotions.org community website for the world cup in Germany built on Impresario.</p>
+    <p><i>2006 - 2008</i> <a href="https://hypoxi.com">Hypoxi</a> websites and partner extranet built on Impresario.</p>
+    <p><i>2009</i> Sanitation-Is-Dignity.org campaign site.</p>
+    <p><i>2009</i> <a href="https://jaspersoft.com/">Jaserpersoft.com</a> website relaunch with Drupal.</p>
+    <p><i>2009 - 2011</i> <a href="https://www.actency.fr/">Actency.fr</a> Drupal-based software product.</p>
+    <p><i>2011</i> Zoobe.com Drupal consulting.</p>
+    <p><i>2011</i> Published article about Drupal 7 in PHPmagazin.</p>
+    <p><i>2011</i> Public talk about Behavior-Driven-Development at DrupalCamp Berlin.</p>
+    <p><i>2011</i> Released 3 new OS Drupal modules.</p>
+    <p><i>2012</i> <a href="https://ren21.net/">REN21.net</a> Drupal-based peer review application.</p>
+    <p><i>2012</i> Public talk about BDD and Flow Psychology at DrupalCamp Essen.</p>
+    <p><i>2012</i> SQUIN web application to help smokers quit, built on Drupal.</p>
+    <p><i>2013</i> RedbullFlugtagUsa.com Drupal-based microsite-builder.</p>
+    <p><i>2013</i> umweltbundesamt.de interactive application for visualizing air pollution data.</p>
+    <p><i>2013 - 2014</i> <a href="https://www.arte.tv/en/arte-concert/">concert.arte.tv</a> Drupal development in a team
+      of 4.</p>
+    <p><i>2014 - 2015</i> ARTE Site Factory – another Drupal-based microsite-builder.</p>
+    <p><i>2014 - 2019</i> bootstrapped flowra.com web app for singers to deliberately practice songs, built on MEAN stack.
+    </p>
+  <p><i>2016</i> INA Drupal-based editorial publishing system.</p>
+  <p><i>2016 - 2017</i> <a href="https://github.com/kreuzwerker/DKT.flows">DKT Flows</a> and <a
+      href="https://github.com/kreuzwerker/DKT.flows-engine">Flows Engine</a> - Zappier for AI services built on (new)
+    Angular and serverless AWS.</p>
+  <p><i>2018</i> <a href="https://www.seachefs.com/">Seachefs</a> – HR management software for cruise ships, built on
+    React and AWS.</p>
+  <p><i>2019</i> worked on flowra.com as part of the MediaLab Accelerator cohort</p>
+  <p><i>2020</i> <a href="https://www.raisin.bank/en/banking-as-a-service/">Raisin Bank</a> banking-as-a-service API
+    built on serverless AWS.</p>
+  <p><i>2020 - 2021</i> Planning and building my house.</p>
+  <p><i>2020 - 2022</i> <a href="https://www.t-online.de/wetter">t-online.de/wetter</a> high-traffic weather site built
+    on Next.js and AWS.</p>
+  <p><i>2022</i> <a href="https://www.t-online.de">t-online.de</a> Re-launch of Germany's 2nd biggest news portal as
+    part of their front-end engineering team.</p>
+  <p><i>2022</i> Built my terrace deck.</p>
+  <p><i>Since 2022</i> working at SAP as tech lead of an innovation team.</p>
+  <p><i>Since 2023</i> bootstrapping <a href="https://www.songcoach.ai">Songcoach.ai</a>, built with React Native and
+    Supabase.</p>
+  
+  <h2 id="how-i-work">How I work (with others)</h2>
+  <p>Before I think about a solution, I make an effort to better understand the perceived problem at hand. The best
+    solution doesn’t require writing any software at all.</p>
+  <p>When writing code, I have the reader in mind. The person should be able to understand my implementation and design
+    choices without any context knowledge. This manifests in good naming, good abstractions and keeping the README
+    up-to-date at all times, so anyone can run the software locally.</p>
+  <p>Aiming for high test coverage imo is a waste of engineering time. TypeScript and linters have made developing
+    high-quality software much more attainable, allowing you to refactor code with confidence. Automated tests however
+    do make sense for covering the core user flows and edge cases of an application at an integration level. Also in
+    large projects with many contributors.</p>
+  <p>When I work as tech lead, one of my main concerns is to anticipate hidden complexities and avoid them wherever
+    possible. I’ve worked on too many codebases (some of them my own), that grew into an unmanageable mess due to lack
+    of technical leadership.</p>
+  <p>When I review PRs, I expect the engineer who requested my review to make my life easy by:</p>
+  <ul>
+    <li>describing what the PR changes/fixes, including screenshots/videos if the UI is affected</li>
+    <li>following our definition-of-done (functional completeness, coding conventions, test coverage, no regressions, …)
+      so I don’t have to spend my time on pointing out the obvious</li>
+    <li>keeping PRs small but non-trivial. At SAP we are trying to create stacked PRs, but haven’t found a golden rule
+      how to scope PRs yet.</li>
+  </ul>
+  <p>I obviously aim to do the same when I request review on one of my PRs.</p>
+  <p>I celebrate when code gets deleted from the codebase (<em>especially</em> code that I own myself).</p>
+  <p>I love working with UX designers that have a genuine interest in figuring out a solution to a user problem together
+    with me, bringing talents to the table that I don’t have. Especially if the designer has a knack for good
+    copywriting.</p>
+  <p>I enjoy working with product managers that excel at filling a pipeline of validated user problems, not writing
+    ticket specs for me.</p>
+  <p>I thrive working with talented junior engineers who learn fast and are good communicators by nature. Being able to
+    speak english fluently and listen carefully is a must-have requirement. Being a React ninja isn’t.</p>
+  <p>When I interview candidates for a position, I ask them to explain code written by them that they’re proud of. This
+    usually leads into a discussion that shows me how candidates think and how well they’re able to explain their
+    decisions. I get to see their development environment and I might even ask them to implement a small change in their
+    project (which is fairer than some artificial live coding challenge).</p>
+  <p>I expect everyone in my team to take ownership of their work. If I commit onto a feature, I’m responsible for
+    bringing it into production and taking care of any regressions, regardless of the experience level.</p>
+  <p>In functional teams, everybody helps each other out to achieve a common objective like a sprint goal or a release.
+    This works best if the committed workload leaves room for unexpected blockers. Which in turn requires thoughtful
+    planning: let’s think harder about this beforehand and come up with a simpler/cheaper solution with a similar
+    impact.</p>
+  <p>I&#39;m done with working in project teams that mindlessly practice Scrum cargo cult. It makes me suffer and I
+    don&#39;t want it in my life any longer. Instead, I seek to work in teams that practice something similar to the <a
+      href="https://basecamp.com/shapeup">Shape Up</a> approach.</p>
+  <p>I enjoy the occasional public speaking engagement to represent my employer. My primary focus however is to deliver
+    working software on time and budget.</p>
+  <p>I am using quantitative and qualitative data to inform my decision making. But I also rely on my gut feeling,
+    especially when there's not enough data available yet.</p>
+  <p>I mentor and would like to be mentored. So please get in touch!</p>
+  <p>I generally have a no-bs attitude and prefer candid talk. At the same time, I respect people’s feelings and make an
+    effort to never criticize someone personally.</p>
+  <p>I highly value receiving constructive feedback and I also give feedback and praise as much as I can.</p>
+  
+  <h2 id="tools">Tools I use</h2>
+  <p>I work mouseless on my beloved <a href="https://ultimatehackingkeyboard.com/">Ulimate Hacking Keyboard</a> or the
+    pretty decent MacBook Pro keyboard.</p>
+  <p>To type more ergonomically (and a little bit faster), I've applied the <a
+      href="https://colemakmods.github.io/ergonomic-mods/angle.html">angle mod</a> to my keyboard layout. I also tried
+    and failed to adopt the <a href="https://www.kaufmann.no/roland/dvorak/">Programmer Dvorak layout</a>.</p>
+  <p>Tip: I use <a href="http://typelit.io/">typelit.io</a> to relax and practice touch typing (I’ve typed 10+ classic
+    novels thus far. <a href="https://www.typelit.io/chapters/Animal_Farm">Animal Farm</a> was the most fun!). </p>
+  <p>I code in VS Code using the <a
+      href="https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim">Neovim plugin</a>. I once tried
+    switching to <a href="https://www.lunarvim.org/">LunarVim</a>
+    for a couple of months. But configuring and maintaining devoured too
+    much of my time.</p>
+  <p>I’m not a VIM ninja. Yet I learned to master the 20 or so most important commands. Plugins that I rely upon (trying
+    to keep them to a minimum):
+  <p>
+  <ul>
+    <li><a href="https://github.com/easymotion/vim-easymotion">vim-easymotion</a>: to move faster in code</li>
+    <li><a href="https://github.com/tpope/vim-surround">vim-surround</a>: to change surrounding characters</li>
+    <li><a href="https://github.com/tpope/vim-unimpaired">vim-unimpaired</a>: to leave normal mode less often</li>
+    <li><a href="https://github.com/wellle/targets.vim">vim-targets</a>: to work with items in array, object etc.</li>
+  </ul>
+  <p>I use <a href="https://sw.kovidgoyal.net/kitty">Kitty</a> as my terminal. And <a
+      href="https://github.com/jesseduffield/lazygit">lazygit</a> for a nice terminal-based GUI experience, especially
+    for reviewing hunks before creating a commit.</p>
+  <p>I use <a href="https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb">Vimium</a> for
+    mousless navigation in the browser and <a href="https://vimacapp.com/">Vimac</a> for the same on OS level.</p>
+  
+  <h3 id="productivity">Productivity</h3>
+  <p>I’m loosely following the <a href="https://www.youtube.com/watch?v=d93SGaf82OM&amp;t=329s">Pillars, Pipelines and
+      Vaults</a> methodology. It helps me with setting the right priorities in life and following through on them.</p>
+  <p>I use <a href="https://obsidian.md/">Obsidian</a> for all my notes and task management. What I like the most about
+    Obsidian:</p>
+  <ul>
+    <li>I can use VIM commands to navigate and edit text which keeps me in the flow.</li>
+    <li>I can customize it to exactly my needs: a custom-built light implementation of PPV.</li>
+    <li>It stores all my data locally in markdown files. I've used Evernote before and getting my data out of there was
+      a real pain.</li>
+  </ul>
+  <p>I have a <a href="https://readwise.io/">Readwise</a> subscription which lets me bookmark relevant articles, create
+    annotations, tag and then sync these annotations automatically into Obsidian so I find them again when I work on a
+    specific project.</p>
+  
+  <p>I find their <a href="https://read.readwise.io/">Reader app</a> to be really well-executed and I use it on an
+    almost daily basis.</p>
+  
+  <p>I actually consider this workflow to be a <b>competitive advantage</b> for any knowledge worker, as it will help
+    you reveal relevant knowledge just when you need it.</p>
+  
+  <h2 id="skills">Skills</h2>
+  <p>I’m proficient in TypeScript, React, Next.js and CSS/SCSS; Node and Express.js;</p>
+  <p>I used to be proficient in building serverless backend systems on AWS (Lambda, API Gateway, CloudFront, ECS etc.).
+    But it’s been ~2 years that I actually built something meaningful on AWS the last time.</p>
+  <p>I have recently learned how to work with LLMs and build RAG systems. But I wouldn't consider myself an expert
+    because of that.</p>
+  <p>I currently skill up in Python, Postgres, React Native and Tamagui.</p>
+  <p>I have knowledge about SAP technology like BTP or UI5 which is completely irrelevant in the outside world.</p>
+  <p>Skills I’ll never need again: Angular, AngularJS, Angular Material, Loopback, MongoDB, gulp, i.e. the old MEAN
+    stack; Drupal, PHP, MySQL, i.e. the old LAMP stack.</p>
+  <p>My mother tongue is german, although I actually speak to my kids in <a
+      href="https://www.youtube.com/watch?v=9YwwDQCr7fk">bavarian dialect</a>. I fluently speak english and spanish. I
+    understand french and catalan, but I can't speak it (anymore).</p>
+  <p>I play the guitar, that is ~10 different chords and a few strumming patterns. And I learned to play the keyboard
+    when I was a kid. Both instruments just well enough to accompany myself when I sing songs.</p>
+  
+  <h3 id="routine">A typical day in the life of...</h3>
+  <p><i>6:30am</i> Iterate <a href="https://www.songcoach.ai">Songcoach.ai</a> or take 1:1 calls with my manager who
+    works in pacific time.</p>
+  <p><i>7:45am</i> Get kids ready for Kindergarten.</p>
+  <p><i>8:15am</i> Work out, shower.</p>
+  <p>I aim to work out at least 4x per week. Over the time I’ve simplified my workout routine to only 3 exercises: heavy
+    jump rope, elevated push-ups and pull-ups. My workouts don’t take longer than 20 minutes, but they’re intense and
+    effective at burning calories and strengthening my entire body.</p>
+  <p><i>9am</i> Job: deep work.</p>
+  <p><i>12pm</i> Lunch break.</p>
+  <p><i>12:30pm</i> Commute to coworking space by bike and listen to podcasts or ebooks.</p>
+  <p><i>1pm</i> Job: shallow work with a mix of meetings, emails, slack and a second round of PR reviews.</p>
+  <p><i>6pm</i> Commute back home and listen to music to unwind.</p>
+  <p><i>6:30pm</i> Family time, chores.</p>
+  <p><i>~9:00pm</i> Read book and get to sleep.</p>
+  <p>I’m actually not <em>that</em> disciplined at reading books every day. I also watch stuff on Netflix or listen to
+    audiobooks. Whatever works to shut down the system and get a good night’s rest.</p>
+  
+  <h2 id="books">Some of the books that influenced me</h2>
+  <p><a href="https://www.goodreads.com/en/book/show/66354">Flow Psychology</a>: can you engineer a flow state?</p>
+  <p><a href="https://goodreads.com/en/book/show/6599104">The Musician’s Way</a>: what does excellence mean in the
+    context of a musical performance and how can a musician achieve it?</p>
+  <p><a href="https://www.goodreads.com/en/book/show/447648">Getting Real</a>: how to build a successful software
+    product without outside funding?</p>
+  <p><a href="https://www.goodreads.com/en/book/show/25238425">The Effective Engineer</a>: how do I make the most out of
+    my time as an engineer and be the most valuable?</p>
+  <p><a href="https://www.goodreads.com/en/book/show/25744928">Deep Work</a>: how can I achieve great work?</p>
+  <p><a href="https://www.goodreads.com/en/book/show/52283963">Mom Test</a>: how can I reveal the truth of what
+    potential customers actually need?</p>
+  <p><a href="https://www.goodreads.com/en/book/show/35249663">Inspired</a>: how to create products customers love?</p>
+  <p>I’m currently reading <a href="https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things">The
+      Hard Things About Hard Things</a> (which I recommend) and <a href="https://www.engguidebook.com/">The Software
+      Engineer’s Guidebook</a>.</p>
+  
+  <h2 id="personal">Personal things</h2>
+  <p>I’m married to a beautiful spanish wife and we have three kids at the age of 3, 3 and 5. Our family life is…
+    intense.</p>
+  <p>I don’t know how to cook and have currently no intention to change this. I actually outsourced cooking to <a
+      href="https://prepmymeal.com">prepmymeal</a> and <a href="https://www.loewenanteil.com/">L&ouml;wenanteil</a> on
+    workdays so I have one thing less to worry about.</p>
+  <p>I’m a fan of Breaking Bad &amp; Better Call Saul. Vince Gilligan to me is a genius writer and the shows’
+    cinematography feels like watching art.</p>
+  <p>I’m a decent singer, although I tend to suck at karaoke.</p>
+  <p>I saw an Ex Beatle as well as two Ex Led Zeppelin members live in concert.</p>
+  <p>I believe Tool is the greatest contemporary heavy rock band.</p>
+  <p>My favorite singers are James Brown, Etta James, Michael Jackson, Chris Stapleton, Paul Carrack, Robert Plant, Paul
+    McCartney, Elin Larsson, Sam Ryder and Eric Anthony. Eric is awesome, go check out <a
+      href="https://www.youtube.com/@ericanthony777">his channel</a>!</p>
+  <p>Even as a 40 year old fart, I still love to go dancing in some shabby Berlin techno club at least once a year.</p>
 
-      <p class="pt4 bt b--black-10 f5">
-        <script language="JavaScript">
-        var one = "ale", two = "xosoft", three = "gmail", four = ".c", five = "om";
-        document.write("<a href='" + "mail" + "to:" + one + two + "@" + three + four + five + "' class='mr3 black-70 social f6' target='_blank'><i class='fa f6 fa-envelope'></i></a>");
-        </script>
-        <a href="http://www.linkedin.com/in/alexwilde/" class="mr3 black-70 social f6" target="_blank"><i class="fa f6 fa-linkedin"></i></a>
-        <a href="http://www.github.com/alexthewilde" class="mr3 black-70 social f6" target="_blank"><i class="fa f6 fa-github"></i></a>
-        <a href="http://www.twitter.com/alexthewilde" class="mr3 black-70 social f6" target="_blank"><i class="fa f6 fa-twitter"></i></a>
-      </p>
-    </div>
-  </div>
-</div>
-
+  <p>
+    <a href="#">Back to top</a>
+  </p>
 
 </body>
 
